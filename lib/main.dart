@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:restaruentflutter_app/pages/categories/indian.dart';
 import 'package:restaruentflutter_app/pages/categories/italian.dart';
+import 'package:restaruentflutter_app/pages/categories/south_indian.dart';
+import 'package:restaruentflutter_app/pages/main_page.dart';
 import 'pages/Login.dart';
 import 'pages/splash.dart';
 import './pages/Signup_page.dart';
@@ -29,6 +31,8 @@ class MyApp extends StatelessWidget {
         '/FourOn': (BuildContext context)=>FourOn(),
         '/Italian':(BuildContext context)=>Italian(),
         '/Indian': (BuildContext context)=>Indian(),
+        '/SouthIndian': (BuildContext context)=>SouthIndian(),
+        '/MainPage':(BuildContext context)=>MainPage()
       },
       home: SplashScreen()
     );

@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:restaruentflutter_app/constant/constant.dart';
 import 'package:restaruentflutter_app/helper/categoriesName.dart';
+import 'package:restaruentflutter_app/helper/fotter.dart';
 import 'package:restaruentflutter_app/helper/headericons.dart';
-import 'package:restaruentflutter_app/helper/navigationcategories.dart';
 import 'package:restaruentflutter_app/helper/scrolldesserts.dart';
 
 class HomePage extends StatefulWidget {
@@ -54,18 +53,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ],
                         ),
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
-                             CategoriesName(text: "Dessert",route: '/HomePage',),
-                             CategoriesName(text: "Italian"),
-                             CategoriesName(text: "Indian"),
-                             CategoriesName(text: "South\nIndian"),
-                            ],
-                          ),
-                        )
+                        Fotter()
                     ],
                   ),
                 ),

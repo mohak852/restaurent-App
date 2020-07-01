@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:restaruentflutter_app/helper/categoriesName.dart';
+import 'package:restaruentflutter_app/helper/fotter.dart';
 import 'package:restaruentflutter_app/helper/headericons.dart';
-import 'package:restaruentflutter_app/helper/navigationcategories.dart';
 import 'package:restaruentflutter_app/helper/scrolldesserts.dart';
-
 
 class Italian extends StatelessWidget {
   @override
@@ -47,17 +46,7 @@ class Italian extends StatelessWidget {
                               ),
                             ],
                         ),
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
-                             CategoriesName(text: "Dessert",route: '/Dessert',),
-                             CategoriesName(text: "Indian"),
-                             CategoriesName(text: "South\nIndian"),
-                            ],
-                          ),
-                        )
+                        Fotter()
                     ],
                   ),
                 ),

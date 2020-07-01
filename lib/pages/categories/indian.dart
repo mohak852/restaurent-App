@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:restaruentflutter_app/helper/categoriesName.dart';
+import 'package:restaruentflutter_app/helper/fotter.dart';
 import 'package:restaruentflutter_app/helper/headericons.dart';
-import 'package:restaruentflutter_app/helper/navigationcategories.dart';
 import 'package:restaruentflutter_app/helper/scrolldesserts.dart';
 
 
@@ -47,17 +47,7 @@ class Indian extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          CategoriesName(text: "Dessert"),
-                          CategoriesName(text: "Indian"),
-                          CategoriesName(text: "South\nIndian"),
-                        ],
-                      ),
-                    )
+                    Fotter()
                   ],
                 ),
               ),
