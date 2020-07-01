@@ -1,4 +1,4 @@
-#Wed Jul 01 13:35:47 IST 2020
+#Wed Jul 01 16:43:49 IST 2020
 base.0=/home/hits/Desktop/restaruent app/flutter_ap/restaruentflutter_app/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -8,9 +8,9 @@ class HeaderIcons extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: <Widget>[
                             SizedBox(width: 120.0,),
-                            Icon(Icons.search),
+                            Icon(Icons.search,color: Colors.black,),
                             SizedBox(width: 15.0,),
-                            Icon(Icons.grid_on),
+                            Icon(Icons.grid_on,color: Colors.black,),
                           ],
                         );
   }

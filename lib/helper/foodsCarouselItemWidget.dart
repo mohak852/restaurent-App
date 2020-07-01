@@ -1,13 +1,11 @@
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 
 class FoodsCarouselItemWidget extends StatefulWidget {
   String categoryname ;
-  String imagePath ;
-
-  FoodsCarouselItemWidget({Key key,  this.categoryname,this.imagePath, }) : super(key: key);
+  String route;
+  FoodsCarouselItemWidget({Key key,  this.categoryname,this.route}) : super(key: key);
 
   @override
   _FoodsCarouselItemWidgetState createState() => _FoodsCarouselItemWidgetState();
@@ -22,7 +20,7 @@ class _FoodsCarouselItemWidgetState extends State<FoodsCarouselItemWidget> {
       splashColor: Theme.of(context).accentColor.withOpacity(0.08),
       highlightColor: Colors.transparent,
       onTap: () {
-          //  Navigator.of(context).pushNamed('menulist')
+//            Navigator.of(context).pushNamed(widget.route);
        
       },
       child: Column(
@@ -32,13 +30,10 @@ class _FoodsCarouselItemWidgetState extends State<FoodsCarouselItemWidget> {
             alignment: AlignmentDirectional.topEnd,
             children: <Widget>[
               GestureDetector(
-                // onTap: (){
-                //   Services.getFoodListbyId(this.widget.categoryid).then((response){
-                //     print(response.length);
-                //        Navigator.of(context).pushNamed('/menulist',arguments:response);
-                //   } );
-                // },
-                              child: Container(
+                 onTap: (){
+                   Navigator.of(context).pushNamed(widget.route);
+                 },
+                child: Container(
                   margin: EdgeInsets.only(left: 10, right: 20),
                   width: 100,
                   height: 130,
@@ -67,7 +62,7 @@ class _FoodsCarouselItemWidgetState extends State<FoodsCarouselItemWidget> {
               child: Column(
                 children: <Widget>[
                   Text(
-                    hasData?this.widget.categoryname:"abc",
+                  widget.categoryname,
                     overflow: TextOverflow.fade,
                     softWrap: false,
                     style: Theme.of(context).textTheme.body1,
